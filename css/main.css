@@ -1,0 +1,11 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.b-carousel {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 1px solid;
+    position: relative;    
+}
