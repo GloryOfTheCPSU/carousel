@@ -9,3 +9,46 @@ body{
     border: 1px solid;
     position: relative;    
 }
+.b-carousel__prev,
+.b-carousel__next{
+    transform: translateY(-50%) translateZ(0);
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    height: 40px;
+    background-color: inherit;
+    border: 0;
+    color: rgb(54, 219, 143);
+    cursor: pointer;
+    z-index: 3;
+    overflow: hidden;
+    font-size: 40px;
+    font-weight: bold;      
+}
+.b-carousel__next{
+    left: auto;
+    right: 20px;
+}
+.b-carousel__wrap{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    will-change: transform;
+}
+.b-carousel__item{
+    flex: 0 0 100%;
+    display: flex;
+    overflow: hidden;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;    
+}
+.b-carousel__img{
+    width: 100%;
+    display: block;
+}
